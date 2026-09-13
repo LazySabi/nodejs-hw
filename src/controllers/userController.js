@@ -19,7 +19,7 @@ export const updateUserAvatar = async (req, res) => {
       avatar: result.secure_url,
     },
     {
-      new: true,
+      returnDocument: 'after',
     },
   );
 
